@@ -188,8 +188,8 @@ ul {
         <p>HSSE Specialist | Risk Management | Onshore/ Offshore Construction & Oil&Gas Safety</p>
 
             <div class="contact-info">
-                <div>📞 +212 xxxxxxxx</div>
-                <div>📧 test@gmail.com</div>
+                <div>📞 +212 660752593</div>
+                <div>📧 K.ayoubbt@gmail.com</div>
                 <div>🔗 linkedin.com/in/b</div>
             </div>
         </div>
