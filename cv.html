@@ -300,13 +300,10 @@ ul {
 </div>
 
 <script>
-function window.print() {
-    const element = document.getElementById("cv");
-
-
-
-    html2pdf().from(element).set(opt).save();
+function downloadPDF() {
+    window.print();
 }
+
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
