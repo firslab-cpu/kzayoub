@@ -300,12 +300,36 @@ ul {
     </div>
 </div>
 
+
 <script>
 function downloadPDF() {
-    window.print();
-}
+    const element = document.getElementById("cv");
 
+    const opt = {
+        margin:       [10, 10, 10, 10],
+        filename:     'CV_Ayoub.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { 
+            scale: 2,
+            useCORS: true,
+            allowTaint: true,
+            logging: true
+        },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
+    };
+
+    html2pdf()
+        .set(opt)
+        .from(element)
+        .save()
+        .catch(err => {
+            console.error("PDF ERROR:", err);
+            alert("PDF failed. Check console (F12).");
+        });
+}
 </script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
