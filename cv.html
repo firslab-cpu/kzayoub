@@ -300,16 +300,10 @@ ul {
 </div>
 
 <script>
-function downloadPDF() {
+function window.print() {
     const element = document.getElementById("cv");
 
-    const opt = {
-        margin: 4,
-        filename: 'CV_Ayoub.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2, useCORS: true, allowTaint: true },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-    };
+
 
     html2pdf().from(element).set(opt).save();
 }
